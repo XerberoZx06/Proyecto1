@@ -1,7 +1,6 @@
 
 import java.util.Scanner;
-//import Principal.Vehiculo;
-//import Principal.Sensor;
+
 
 public class Principal {
 
