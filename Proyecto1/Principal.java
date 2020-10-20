@@ -25,7 +25,6 @@ public class Principal {
                                       "4) Imprimir Informacion de vehiculos: \n"+
                                       "5) Cantidad de Vehiculos parqueados: \n");
           
-        //try{
             int prog = cor.nextInt();
             System.out.println();
         
@@ -55,8 +54,7 @@ public class Principal {
                         System.out.print("El espacio esta ocupado.");
                         }
                 break;
-        
-          
+
             case 3:     
                System.out.println("ingrese espacio: \n");    
                 espacio = cor.nextInt();
@@ -79,19 +77,19 @@ public class Principal {
                         }
                 
                 break;
-                
-                
+
             case 4:
                 System.out.println(Vehiculo.toStringVehiculos());
             break;
-            
-            
+                
             case 5:
                 System.out.println(Vehiculo.cantidad);
             break;    
                 
             case 6:
-                
+                System.out.println(Sensor.sensorLibre());
+                System.out.println(Vehiculo.toStringVehiculos());
+            break;
             }
         
         }
