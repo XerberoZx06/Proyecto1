@@ -1,3 +1,6 @@
+import java.time.LocalDateTime;
+
+
 public class Vehiculo{
     
     
@@ -7,20 +10,24 @@ public class Vehiculo{
     private String color;
     private String placa;
     private int valorComercial;
+    private String tipo;
+    private LocalDateTime fechaHoraIngreso;
+    
 
     
    
-    public Vehiculo(String p, String c, String m){
+    public Vehiculo(String m, String c, String p, LocalDateTime fh){
         
-        this(p,c,m,30000000);
+        this(p,c,m,30000000,fh);
        
     }
     
-    public Vehiculo(String p, String c, String m,int va){
-        this.placa = p;
-        this.color = c;
+    public Vehiculo(String m, String c, String p,int va, LocalDateTime fh){
         this.marca = m;
+        this.color = c;
+        this.placa = p;
         this.valorComercial = va;
+        this.fechaHoraIngreso = fh;
         cantidad++;
         
     }
@@ -63,7 +70,8 @@ public class Vehiculo{
                                 "Marca:"+ this.marca + "\n" +
                                 "Color:"+ this.color + "\n" + 
                                 "Placa:"+ this.placa + "\n"+
-                                "Valor Comercial: \n" + this.valorComercial);
+                                "Valor Comercial: \n" + this.valorComercial+ "\n"+
+                                "Fecha y Hora:"+ this.fechaHoraIngreso);
         return mensaje;
     }
 
